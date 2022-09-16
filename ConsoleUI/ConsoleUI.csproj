@@ -49,5 +49,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Businnes\Businnes.csproj">
+      <Project>{b217cbba-6044-4da8-b04f-7d9e1c003215}</Project>
+      <Name>Businnes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{0a1a810e-8c86-483d-abd0-52b53ddf97a2}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{a464d022-31b2-47f9-b932-d0bafdae7c01}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -41,11 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IProductDal.cs" />
+    <Compile Include="Concreate\InMemory\InMemoryProductDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Abstract\" />
-    <Folder Include="Concreate\" />
+    <Folder Include="Concreate\EntityFramework\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{A464D022-31B2-47F9-B932-D0BAFDAE7C01}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
